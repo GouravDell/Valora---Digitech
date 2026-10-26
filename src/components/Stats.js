@@ -1,37 +1,34 @@
+
 const stats = [
   {
-    value: "50+",
-    label: "Projects Delivered",
+    value: "01",
+    label: "Client-First Approach",
   },
   {
-    value: "30+",
-    label: "Happy Clients",
+    value: "02",
+    label: "Modern Technologies",
   },
   {
-    value: "5+",
-    label: "Years Experience",
+    value: "03",
+    label: "Quality-Focused Development",
   },
   {
-    value: "99%",
-    label: "Client Satisfaction",
+    value: "04",
+    label: "Continuous Improvement",
   },
 ];
 
 function Stats() {
   return (
     <section className="stats-section">
-
       <div className="container stats-grid">
-
         {stats.map((stat) => (
           <div className="stat-item" key={stat.label}>
             <strong>{stat.value}</strong>
             <span>{stat.label}</span>
           </div>
         ))}
-
       </div>
-
     </section>
   );
 }

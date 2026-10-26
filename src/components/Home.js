@@ -1,14 +1,14 @@
+
 const React = require("react");
 
 function Home() {
   return React.createElement(
     "main",
-
     null,
 
     React.createElement(
       "section",
-      { className: "hero" },
+      { className: "hero", id: "home" },
 
       React.createElement(
         "div",
@@ -17,19 +17,28 @@ function Home() {
         React.createElement(
           "span",
           { className: "badge" },
-          "DIGITAL ENGINEERING PARTNER"
+          "Valora DIGITECH IT SOLUTIONS"
         ),
 
         React.createElement(
           "h1",
           null,
-          "We turn bold ideas into digital reality."
+          "We Build ",
+          React.createElement(
+            "span",
+            { className: "highlight" },
+            "Digital Experiences"
+          ),
+          " That Drive Growth."
         ),
 
         React.createElement(
           "p",
           null,
-          "We build software, websites, mobile applications and AI solutions that help businesses grow."
+          "Transform your ideas into powerful digital solutions. ",
+          "We specialize in modern web development, custom software, ",
+          "responsive applications, and AI-powered technologies ",
+          "that help businesses move forward."
         ),
 
         React.createElement(
@@ -39,20 +48,27 @@ function Home() {
           React.createElement(
             "a",
             {
-              href: "/services",
+              href: "#services",
               className: "primary-button"
             },
-            "Explore Services"
+            "Explore Services ",
+            React.createElement("span", null, "→")
           ),
 
           React.createElement(
             "a",
             {
-              href: "/contact",
+              href: "#contact",
               className: "secondary-button"
             },
             "Start a Project"
           )
+        ),
+
+        React.createElement(
+          "div",
+          { className: "hero-tagline" },
+          "Innovate. Build. Transform."
         )
       )
     )
