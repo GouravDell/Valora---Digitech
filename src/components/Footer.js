@@ -1,6 +1,6 @@
 
 import ValoraLogo from "../assets/valora.svg";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram,FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -33,19 +33,31 @@ function Footer() {
           </div>
 
           {/* Instagram Business Link */}
-          <div className="footer-socials">
-            <a
-              href="https://www.instagram.com/valora_digitech/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="instagram-link"
-              aria-label="Visit Valora on Instagram"
-            >
-              <FaInstagram size={20} />
-              <span>Follow us on Instagram</span>
-              <span aria-hidden="true">↗</span>
-            </a>
-          </div>
+        <div className="footer-socials">
+  <a
+    href="https://www.instagram.com/valora_digitech/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-link instagram-link"
+    aria-label="Visit Valora on Instagram"
+  >
+    <FaInstagram size={22} />
+    <span>Follow us on Instagram</span>
+    <span className="social-arrow">↗</span>
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/valora-digitech-357985447/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="social-link linkedin-link"
+    aria-label="Visit Valora on LinkedIn"
+  >
+    <FaLinkedin size={22} />
+    <span>Connect with us on LinkedIn</span>
+    <span className="social-arrow">↗</span>
+  </a>
+</div>
         </div>
 
         {/* Company Links */}
